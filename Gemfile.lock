@@ -267,7 +267,9 @@ GEM
       mimemagic (~> 0.3.2)
     maxminddb (0.1.22)
     method_source (0.9.2)
-    mimemagic (0.3.3)
+    mimemagic (0.3.10)
+      nokogiri (~> 1)
+      rake
     mini_magick (4.10.1)
     mini_mime (1.0.2)
     mini_portile2 (2.4.0)
@@ -333,7 +335,8 @@ GEM
     progress (3.5.2)
     psych (3.1.0)
     public_suffix (4.0.3)
-    puma (3.12.2)
+    puma (5.6.4)
+      nio4r (~> 2.0)
     quad_tile (1.0.1)
     r2 (0.2.7)
     rack (2.1.1)
@@ -525,7 +528,7 @@ DEPENDENCIES
   pg
   poltergeist
   psych
-  puma (~> 3.11)
+  puma (~> 5.6)
   quad_tile (~> 1.0.1)
   r2 (~> 0.2.7)
   rack-cors
